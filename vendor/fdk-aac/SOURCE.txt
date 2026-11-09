@@ -1,0 +1,12 @@
+OPTIONAL. libfdk-aac-2.dll is NOT included in this repository, and the bridge works without it.
+
+Without it, playback uses SBC, the AAC-ELD option is hidden, and AAC uses FFmpeg's encoder.
+To use Apple AAC-ELD or the FDK AAC-LC encoder, put your own copy in this folder.
+
+It is the Fraunhofer FDK AAC 2.0.3 library, prebuilt by MSYS2:
+  package: mingw-w64-ucrt-x86_64-fdk-aac-2.0.3-1-any.pkg.tar.zst
+  from:    https://repo.msys2.org/mingw/ucrt64/
+  file:    ucrt64/bin/libfdk-aac-2.dll inside the package
+
+Licence: see NOTICE. AAC and AAC-ELD are patent-encumbered and no patent licence comes with
+the library. Make sure your use is covered.

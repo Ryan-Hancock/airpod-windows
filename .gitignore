@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+# Voice recordings and measurements. Never commit these.
+captures/*
+!captures/.gitkeep
+*.wav
+*.npz
+*.sdu
+*.au
+# Generated test audio
+media/
+# Licensed separately: see vendor/fdk-aac/SOURCE.txt
+vendor/fdk-aac/*.dll
